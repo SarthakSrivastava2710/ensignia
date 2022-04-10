@@ -1,0 +1,25 @@
+.team-member-card {
+  width: 22vw;
+  border: 2px solid var(--cyan);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  background: hwb(212 8% 100%);
+  margin: 1.5rem;
+}
+
+.team-member-image {
+  width: 90%;
+}
+
+.team-member-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.team-member-name {
+  text-align: center;
+}

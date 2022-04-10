@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --mont: 'Montserrat', sans-serif;
+  --pop: 'Poppins', sans-serif;
+  --cyan: #00ffff;
+}
+
+span {
+  color: var(--cyan);
+}
+
+.main {
+  width: 90vw;
+  margin: 8rem auto;
+  display: flex;
+}
+
+.leftMain {
+  width: 60%;
+}
+
+.leftMain h1 {
+  font-size: 3.5rem;
+}
+
+.leftMain p {
+  font-size: 1.15rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.04rem;
+}
+
+.discord {
+  width: 16vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: var(--cyan);
+  border-radius: 0.5rem;
+  border: none;
+  font-family: var(--mont);
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.75rem 0;
+  margin-top: 2.75rem;
+}
+
+.discord img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* right side */
+
+.main-right-bg {
+  background: rgba(0, 255, 255, 0.3);
+  width: 100%;
+  border-radius: 1rem;
+  margin: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.main-right-content {
+  padding: 1rem 2rem;
+}
+
+.main-right-bg h2::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  margin-right: 1rem;
+  border-radius: 50%;
+  border: 3px solid var(--cyan);
+}
+
+.main-right-bg h2 {
+  color: var(--cyan);
+  margin-bottom: 0;
+  margin-top: 2.2rem;
+}
+
+.main-right-bg h4 {
+  margin: 0.2rem 2rem;
+  font-size: 1.1rem;
+}
