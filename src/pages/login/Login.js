@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Login.css';
+// import SignUp from '../signup/SignUp';
+import { NavLink } from 'react-router-dom';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -16,7 +18,12 @@ function Login() {
             <div className='login-body-body-container'>
               <div className='login-body-body-container-input'>
                 <label>Email</label>
-                <input type='email' value={email} onChange={(e) => setEmail(e.target.value)} />
+                <input
+                  type='email'
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder='sarthak@gmail.com'
+                />
               </div>
               <div className='login-body-body-container-input'>
                 <label>Password</label>
@@ -35,7 +42,7 @@ function Login() {
           </form>
         </div>
         <h4 className='ask-signup'>
-          Not registered? <a href='/'>Sign Up now!</a>
+          Not registered? <NavLink to='../signup/SignUp'> Sign Up now!</NavLink>
         </h4>
       </div>
     </div>

@@ -7,6 +7,7 @@ import Challenge from './pages/challenges/Challenges';
 import Scoreboard from './pages/scoreboard/Scoreboard';
 import Footer from './components/Footer';
 import Login from './pages/login/Login';
+import SignUp from './pages/signup/SignUp';
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
         </Route>
         <Route exact path='/login/Login'>
           <Login />
+        </Route>
+        <Route exact path='/signup/SignUp'>
+          <SignUp />
         </Route>
       </Switch>
       <Footer />
