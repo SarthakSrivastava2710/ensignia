@@ -1,6 +1,6 @@
 .team-member-card {
   width: 22vw;
-  border: 2px solid var(--cyan);
+  border: 2px solid rgba(0, 255, 255, 0.4);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -9,6 +9,11 @@
   padding: 20px;
   background: hwb(212 8% 100%);
   margin: 1.5rem;
+  transition: all ease-in-out 1s;
+}
+
+.team-member-card:hover {
+  border: 2px solid rgba(0, 255, 255, 1);
 }
 
 .team-member-image {

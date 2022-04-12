@@ -13,16 +13,16 @@ function Navbar() {
       <div className='right'>
         <ul>
           <li>
-            <NavLink to='/challenges'> Challenges</NavLink>
+            <NavLink to='/challenges/challenges'> Challenges</NavLink>
           </li>
           <li>
-            <NavLink to='/scoreboard'> Scoreboard</NavLink>
+            <NavLink to='/scoreboard/Scoreboard'> Scoreboard</NavLink>
           </li>
           <li>
             <NavLink to='/teams/team'> Team</NavLink>
           </li>
           <li>
-            <NavLink to='/login'> Login</NavLink>
+            <NavLink to='/login/Login'> Login</NavLink>
           </li>
         </ul>
       </div>

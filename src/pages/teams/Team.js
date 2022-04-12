@@ -8,10 +8,22 @@ function Team() {
     <div className='team-container'>
       <h1>Our Team</h1>
       <div className='cards'>
-        <Card profilePic={Images.sarthak} name='Sarthak Srivastava' />
-        <Card profilePic={Images.sarthak} name='Sarthak Srivastava' />
-        <Card profilePic={Images.sarthak} name='Sarthak Srivastava' />
-        <Card profilePic={Images.sarthak} name='Sarthak Srivastava' />
+        <Card
+          profilePic={Images.sarthak}
+          name='Sarthak Srivastava'
+          link='https://sarthaksrivastava2710.github.io/portfolio/'
+        />
+        <Card
+          profilePic={Images.yukti}
+          name='Yukti Ghablani'
+          link='https://www.linkedin.com/in/yukti-ghablani-2264a81b1/'
+        />
+        <Card
+          profilePic={Images.tanu}
+          name='Tanu Verma'
+          link='https://www.linkedin.com/in/tanu-verma-853010191/'
+        />
+        <Card profilePic={Images.yajus} name='Yajus Gakhar' />
       </div>
     </div>
   );

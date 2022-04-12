@@ -1,0 +1,28 @@
+.challenge-container {
+  width: 25vw;
+  background-color: rgba(0, 255, 255, 0.4);
+  border-radius: 20px;
+  margin: 2rem;
+}
+
+.challenge-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.challenge-name,
+.challenge-score {
+  font-family: var(--mont);
+  margin: 0.5rem 0;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+.challenge-score {
+  font-size: 1.2rem;
+  font-weight: 600;
+}

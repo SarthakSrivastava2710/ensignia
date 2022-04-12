@@ -3,12 +3,14 @@ import './Card.css';
 
 function Card(props) {
   return (
-    <div className='team-member-card'>
-      <div className='team-member-image'>
-        <img src={props.profilePic} alt='' />
+    <a href={props.link} target='_blank' rel='noreferrer'>
+      <div className='team-member-card'>
+        <div className='team-member-image'>
+          <img src={props.profilePic} alt='' />
+        </div>
+        <h2 className='team-member-name'>{props.name}</h2>
       </div>
-      <h2 className='team-member-name'>{props.name}</h2>
-    </div>
+    </a>
   );
 }
 
