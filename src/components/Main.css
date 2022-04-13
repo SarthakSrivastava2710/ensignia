@@ -30,9 +30,13 @@ span {
   letter-spacing: 0.04rem;
 }
 
+.leftMain a {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
 .discord {
   width: 16vw;
-  display: flex;
   justify-content: center;
   align-items: center;
   color: black;
@@ -42,13 +46,14 @@ span {
   font-family: var(--mont);
   font-weight: 600;
   font-size: 1.1rem;
-  padding: 0.75rem 0;
-  margin-top: 2.75rem;
+  padding: 1rem 1rem;
 }
 
 .discord img {
   width: 30px;
-  margin: 0 10px;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
 }
 
 a {
@@ -89,4 +94,86 @@ a {
 .main-right-bg h4 {
   margin: 0.2rem 2rem;
   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .main {
+    margin: 2rem auto;
+  }
+  .leftMain h1 {
+    font-size: 2.5rem;
+  }
+
+  .leftMain p {
+    font-size: 1rem;
+  }
+  .main-right-bg h2 {
+    font-size: 1.25rem;
+  }
+
+  .discord {
+    font-size: 1.1rem;
+  }
+
+  .discord img {
+    width: 30px;
+    top: 6px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftMain {
+    width: 100%;
+    text-align: center;
+  }
+
+  .leftMain h1 {
+    font-size: 3rem;
+  }
+
+  .main-right-bg {
+    margin: 3rem auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .main-right-bg h2,
+  .main-right-bg h4 {
+    font-size: 1rem;
+  }
+
+  .main-right-bg h2::before {
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    margin-right: 1rem;
+    border-radius: 50%;
+    border: 3px solid var(--cyan);
+    position: relative;
+    top: 2px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .main-right-bg h2,
+  .main-right-bg h4 {
+    font-size: 0.8rem;
+  }
+
+  .main-right-bg h2::before {
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    margin-right: 1rem;
+    border-radius: 50%;
+    border: 3px solid var(--cyan);
+    position: relative;
+    top: 2px;
+  }
 }
