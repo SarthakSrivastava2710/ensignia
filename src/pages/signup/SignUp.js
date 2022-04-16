@@ -48,7 +48,7 @@ function SignUp() {
               />
             </div>
             <div className='sign-up-name'>
-              <div className='signup-body-body-container-input'>
+              <div className='signup-body-body-container-input signup-body-body-container-input-password'>
                 <label>Password</label>
                 <input
                   type='password'

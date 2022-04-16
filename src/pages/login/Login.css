@@ -13,7 +13,7 @@ input {
 .login-container {
   background-color: #162031;
   width: 50vw;
-  min-width: 300px;
+  /* min-width: 300px; */
   padding: 5rem;
   padding-top: 3rem;
   margin-top: 4rem;
@@ -71,4 +71,12 @@ input {
 
 .ask-signup a {
   color: var(--cyan);
+}
+
+@media screen and (max-width: 700px) {
+  .login-container {
+    width: 100%;
+    padding: 3rem;
+    margin-top: 1rem;
+  }
 }

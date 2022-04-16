@@ -2,7 +2,7 @@
   text-align: center;
   margin-top: 4rem;
   color: var(--cyan);
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .cards {
@@ -11,4 +11,17 @@
   align-items: center;
   flex-wrap: wrap;
   margin-top: 4rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 940px) {
+  .cards {
+    width: 90%;
+  }
+
+  .team-container h1 {
+    font-size: 2.75rem;
+    font-weight: 500;
+  }
 }

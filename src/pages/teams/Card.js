@@ -3,7 +3,7 @@ import './Card.css';
 
 function Card(props) {
   return (
-    <a href={props.link} target='_blank' rel='noreferrer'>
+    <a href={props.link} target='_blank' rel='noreferrer' className='team-member-card-card'>
       <div className='team-member-card'>
         <div className='team-member-image'>
           <img src={props.profilePic} alt='' />
