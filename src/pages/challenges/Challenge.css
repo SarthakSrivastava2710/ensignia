@@ -3,6 +3,7 @@
   background-color: rgba(0, 255, 255, 0.4);
   border-radius: 20px;
   margin: 2rem;
+  text-align: center;
 }
 
 .challenge-content {
@@ -25,4 +26,59 @@
 .challenge-score {
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1360px) {
+  .challenge-container {
+    width: 33vw;
+  }
+
+  .challenge-name,
+  .challenge-score {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .challenge-container {
+    width: 33vw;
+  }
+
+  .challenge-name,
+  .challenge-score {
+    font-size: 1.1rem;
+  }
+
+  .challenge-score {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .challenge-container {
+    width: 40vw;
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .challenge-container {
+    width: 80vw;
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .challenge-name,
+  .challenge-score {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .challenge-container {
+    width: 95vw;
+    margin: 1rem;
+  }
 }

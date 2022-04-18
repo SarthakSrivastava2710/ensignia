@@ -5,3 +5,9 @@
   text-align: center;
   margin-top: 5rem;
 }
+
+@media screen and (max-width: 900px) {
+  .scoreboard-heading {
+    font-size: 2rem;
+  }
+}

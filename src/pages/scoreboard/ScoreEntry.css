@@ -25,5 +25,31 @@
 }
 
 .score-entry .score-user {
-  padding-right: 35rem;
+  padding-right: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  .score-entry span {
+    font-size: 1rem;
+  }
+
+  .score-entry .score-user {
+    padding-right: 40%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .score-entry-container {
+    width: 95vw;
+  }
+
+  .score-entry .score-user {
+    padding-right: 30%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .score-entry-container {
+    width: 100vw;
+  }
 }
