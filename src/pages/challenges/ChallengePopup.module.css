@@ -1,0 +1,87 @@
+.ChallengePopup-outerContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.ChallengePopup-innerContainer {
+  width: 40vw;
+  height: 45vh;
+  z-index: 2;
+  background-color: #117f8d;
+  margin-top: 6em;
+  border-radius: 1em;
+  padding: 1em 2em;
+}
+
+.ChallengePopup-cancelContainer {
+  width: 100%;
+  text-align: right;
+}
+
+.ChallengePopup-cancelIcon {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.ChallengePopup-challengeDetails {
+  width: 100%;
+  text-align: center;
+}
+
+.ChallengePopup-challengeIO {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.ChallengePopup-challengeIO p {
+  margin: 0;
+}
+
+.ChallengePopuup-file {
+  width: 48%;
+  display: block;
+  background-color: var(--cyan);
+  color: black;
+  padding: 0.5em;
+}
+
+.ChallengePopuup-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ChallengePopuup-textInput {
+  font-size: 16px;
+  width: 68%;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  border: 2px solid var(--cyan);
+  color: var(--cyan);
+  background-color: transparent;
+  outline: none;
+}
+
+.ChallengePopuup-textInput::placeholder {
+  color: var(--cyan);
+}
+
+.ChallengePopuup-submitButton {
+  padding: 0.5em 3em;
+  border-radius: 0.3em;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid var(--cyan);
+  color: var(--cyan);
+}
