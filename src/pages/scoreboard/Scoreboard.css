@@ -6,6 +6,10 @@
   margin-top: 5rem;
 }
 
+.scoreboard-table-container {
+  min-height: 31vh;
+}
+
 @media screen and (max-width: 900px) {
   .scoreboard-heading {
     font-size: 2rem;

@@ -1,15 +1,33 @@
-import React from 'react';
-import './Challenge.css';
+import React, { useState } from "react";
+import "./Challenge.css";
+import ChallengePopup from "./ChallengePopup";
 
-function challenge(props) {
+function Challenge({ challenge }) {
+  const [popupDisplay, setPopupDisplay] = useState(false);
+
+  const popupDisplayHandler = () => {
+    setPopupDisplay(true);
+  };
+
+  const hidePopupDisplayHandler = (value) => {
+    if (value) setPopupDisplay(false);
+  };
   return (
-    <div className='challenge-container'>
-      <div className='challenge-content'>
-        <h1 className='challenge-name'>{props.chalName}</h1>
-        <h3 className='challenge-score'>{props.chalScore}</h3>
+    <>
+      {popupDisplay && (
+        <ChallengePopup
+          challenge={challenge}
+          onHidePopupDisplay={hidePopupDisplayHandler}
+        />
+      )}
+      <div className="challenge-container" onClick={popupDisplayHandler}>
+        <div className="challenge-content">
+          <h1 className="challenge-name">{challenge.challengeName}</h1>
+          <h3 className="challenge-score">{challenge.challengeScore}</h3>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
-export default challenge;
+export default Challenge;
